@@ -52,7 +52,40 @@
             ]
           ]
         }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "New York City",
+          "POP2005": 8175133
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-74.006, 40.7128]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Toronto",
+          "POP2005": 2731571
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.3832, 43.6532]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Beijing",
+          "POP2005": 19612368
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [116.4074, 39.9042]
+        }
       }
     ]
-  }
+}
   

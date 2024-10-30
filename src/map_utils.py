@@ -1,5 +1,5 @@
 import folium
-from folium.plugins import MarkerCluster
+from folium.plugins import MarkerCluster, HeatMap
 
 # Function to set color based on volcano elevation
 def color_producer(elevation):
@@ -35,3 +35,14 @@ def add_population_layer(map, population_data):
         },
         name="Population"
     ).add_to(map)
+
+# Function to add population density heatmap
+def add_population_heatmap(map, population_data):
+    # Extract population density points (latitude, longitude, and population as intensity)
+    heat_data = [
+        [feature["geometry"]["coordinates"][1], feature["geometry"]["coordinates"][0], feature["properties"]["POP2005"]]
+        for feature in population_data["features"]
+        if feature["geometry"]["type"] == "Point"  # Ensure we use only point coordinates
+    ]
+    # Add heatmap layer to the map
+    HeatMap(heat_data, radius=15, max_zoom=6, blur=20, min_opacity=0.4).add_to(map)

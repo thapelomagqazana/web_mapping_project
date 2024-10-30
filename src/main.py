@@ -1,7 +1,7 @@
 import folium
 import pandas as pd
 import json
-from map_utils import add_volcano_markers, add_population_layer
+from map_utils import add_volcano_markers, add_population_layer, add_population_heatmap
 
 # Create the map with attribution for the "Stamen Terrain" tile
 map = folium.Map(
@@ -18,6 +18,7 @@ add_volcano_markers(map, volcano_data)
 with open("data/world_population.json", "r") as f:
     population_data = json.load(f)
 add_population_layer(map, population_data)
+add_population_heatmap(map, population_data)
 
 
 # Save the map as an HTML file
