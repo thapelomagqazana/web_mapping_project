@@ -5,8 +5,8 @@ from map_utils import add_volcano_markers, add_population_layer
 
 # Create the map with attribution for the "Stamen Terrain" tile
 map = folium.Map(
-    location=[20, 0],
-    zoom_start=2,
+    location=[39.8283, -98.5795], 
+    zoom_start=5,
     tiles="Stamen Terrain",
     attr="Map tiles by Stamen Design, CC BY 3.0 — Map data © OpenStreetMap contributors"
 )

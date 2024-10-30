@@ -1,4 +1,5 @@
 import folium
+from folium.plugins import MarkerCluster
 
 # Function to set color based on volcano elevation
 def color_producer(elevation):
@@ -12,12 +13,15 @@ def color_producer(elevation):
 
 # Function to add volcano markers to the map
 def add_volcano_markers(map, data):
+    # Initialize MarkerCluster
+    marker_cluster = MarkerCluster().add_to(map)
+
     for _, row in data.iterrows():
         folium.Marker(
             location=[row["Latitude"], row["Longitude"]],
-            popup=f"{row['Name']} - {row['Elevation']}m",
+            popup=f"{row['Name']} - Elevation: {row['Elevation']} m",
             icon=folium.Icon(color=color_producer(row["Elevation"]))
-        ).add_to(map)
+        ).add_to(marker_cluster)
 
 # Function to add population layer to the map
 def add_population_layer(map, population_data):
