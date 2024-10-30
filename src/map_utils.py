@@ -10,6 +10,19 @@ def color_producer(elevation):
     else:
         return "red"
 
+# Function to create rich HTML popup content
+def create_popup_html(row):
+    html = f"""
+    <div style="width:200px;">
+        <h4>{row['Name']}</h4>
+        <img src="{row['Image']}" width="180px" height="100px"><br><br>
+        <p><b>Elevation:</b> {row['Elevation']} m</p>
+        <p>{row['Description']}</p>
+        <a href="{row['Link']}" target="_blank">Learn more</a>
+    </div>
+    """
+    return html
+
 
 # Function to add volcano markers to the map
 def add_volcano_markers(map, data):
@@ -17,9 +30,13 @@ def add_volcano_markers(map, data):
     marker_cluster = MarkerCluster().add_to(map)
 
     for _, row in data.iterrows():
+
+        # Create HTML content for the popup
+        popup_html = create_popup_html(row)
+        popup = folium.Popup(popup_html, max_width=250)
         folium.Marker(
             location=[row["Latitude"], row["Longitude"]],
-            popup=f"{row['Name']} - Elevation: {row['Elevation']} m",
+            popup=popup,
             icon=folium.Icon(color=color_producer(row["Elevation"]))
         ).add_to(marker_cluster)
 

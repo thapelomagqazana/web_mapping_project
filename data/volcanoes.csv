@@ -1,11 +1,11 @@
-Name,Latitude,Longitude,Elevation
-Mount St. Helens,46.1912,-122.1944,2550
-Mount Rainier,46.8523,-121.7603,4392
-Mount Hood,45.3735,-121.6959,3426
-Mauna Loa,19.4756,-155.6081,4169
-Mount Shasta,41.4092,-122.1945,4317
-Lassen Peak,40.4871,-121.5044,3187
-Crater Lake,42.9446,-122.109,1883
-Mount Baker,48.7768,-121.8144,3285
-Mount Adams,46.2028,-121.4905,3742
-Glacier Peak,48.1125,-121.1137,3213
+Name,Latitude,Longitude,Elevation,Image,Description,Link
+Mount St. Helens,46.1912,-122.1944,2550,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg/1024px-MSH82_st_helens_plume_from_harrys_ridge_05-19-82.jpg,"Mount St. Helens is an active stratovolcano located in Washington, USA.",https://en.wikipedia.org/wiki/Mount_St._Helens
+Mount Rainier,46.8523,-121.7603,4392,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Rainier20200906.jpg/800px-Rainier20200906.jpg,"Mount Rainier is a large active stratovolcano in Washington, USA.",https://en.wikipedia.org/wiki/Mount_Rainier
+Mount Hood,45.3735,-121.6959,3426,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mount_Hood_reflected_in_Mirror_Lake%2C_Oregon.jpg/755px-Mount_Hood_reflected_in_Mirror_Lake%2C_Oregon.jpg,"Mount Hood is the highest mountain in Oregon, USA, and a dormant stratovolcano.",https://en.wikipedia.org/wiki/Mount_Hood
+Mauna Loa,19.4756,-155.6081,4169,https://upload.wikimedia.org/wikipedia/commons/e/e0/Mauna_Loa_Volcano.jpg,"Mauna Loa is one of the largest active volcanoes in the world, located in Hawaii, USA.",https://en.wikipedia.org/wiki/Mauna_Loa
+Mount Shasta,41.4092,-122.1945,4317,https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/MtShasta_aerial.JPG/800px-MtShasta_aerial.JPG,"Mount Shasta is a potentially active volcano located in California, USA.",https://en.wikipedia.org/wiki/Mount_Shasta
+Lassen Peak,40.4871,-121.5044,3187,https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lassen_Peak_in_June_2020.jpg/799px-Lassen_Peak_in_June_2020.jpg,"Lassen Peak is the southernmost active volcano in the Cascade Range, California, USA.",https://en.wikipedia.org/wiki/Lassen_Peak
+Crater Lake,42.9446,-122.109,1883,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Crater_Lake_winter_pano2.jpg/800px-Crater_Lake_winter_pano2.jpg,"Crater Lake is a volcanic crater lake in Oregon, formed by the collapse of Mount Mazama.",https://en.wikipedia.org/wiki/Crater_Lake
+Mount Baker,48.7768,-121.8144,3285,https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mount_Baker_from_Boulder_Creek.jpg/1280px-Mount_Baker_from_Boulder_Creek.jpg,"Mount Baker is a glaciated and active stratovolcano in Washington, USA.",https://en.wikipedia.org/wiki/Mount_Baker
+Mount Adams,46.2028,-121.4905,3742,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mount_Adams_3503s.JPG/1024px-Mount_Adams_3503s.JPG,"Mount Adams is a potentially active stratovolcano in Washington, USA.",https://en.wikipedia.org/wiki/Mount_Adams_(Washington)
+Glacier Peak,48.1125,-121.1137,3213,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Glacier_Peak_7118.JPG/800px-Glacier_Peak_7118.JPG,"Glacier Peak is one of the most remote volcanoes in Washington, USA, within the Cascade Range.",https://en.wikipedia.org/wiki/Glacier_Peak
