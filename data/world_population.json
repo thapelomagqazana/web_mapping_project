@@ -1,0 +1,58 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "United States",
+          "POP2005": 295734134
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-101.6015625, 39.368279],
+              [-100.1953125, 38.68551],
+              [-99.140625, 38.548165],
+              [-98.173828125, 37.853169]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Canada",
+          "POP2005": 32805000
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-141.0, 60.0],
+              [-140.0, 59.0],
+              [-139.0, 58.0]
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "China",
+          "POP2005": 1306313812
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [123.0, 53.0],
+              [124.0, 52.0],
+              [125.0, 51.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+  

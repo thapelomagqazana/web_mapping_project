@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_87770fe6596f28416eee3365b2d375c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_87770fe6596f28416eee3365b2d375c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_87770fe6596f28416eee3365b2d375c9 = L.map(
+                "map_87770fe6596f28416eee3365b2d375c9",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f46204fea2936c7ebd5a84fa57b2099 = L.tileLayer(
+                "Stamen Terrain",
+                {"attribution": "Map tiles by Stamen Design, CC BY 3.0 \u2014 Map data \u00a9 OpenStreetMap contributors", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0f46204fea2936c7ebd5a84fa57b2099.addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var marker_d1fd0979e8bec05cf9cc58c9d0f59327 = L.marker(
+                [46.1912, -122.1944],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_65243e25087aee58f75b0d916448627d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d1fd0979e8bec05cf9cc58c9d0f59327.setIcon(icon_65243e25087aee58f75b0d916448627d);
+        
+    
+        var popup_a2fd4a8b00a1174ae169585ea0568903 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_364d9200b35285467071114251a84a58 = $(`<div id="html_364d9200b35285467071114251a84a58" style="width: 100.0%; height: 100.0%;">Mount St. Helens - 2550m</div>`)[0];
+                popup_a2fd4a8b00a1174ae169585ea0568903.setContent(html_364d9200b35285467071114251a84a58);
+            
+        
+
+        marker_d1fd0979e8bec05cf9cc58c9d0f59327.bindPopup(popup_a2fd4a8b00a1174ae169585ea0568903)
+        ;
+
+        
+    
+    
+            var marker_3f68aa1c97793d3b52f869ad374ec9f8 = L.marker(
+                [46.8523, -121.7603],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_a8a7357fb586cb6a121ee9ed02c4c065 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f68aa1c97793d3b52f869ad374ec9f8.setIcon(icon_a8a7357fb586cb6a121ee9ed02c4c065);
+        
+    
+        var popup_fc11de1a947f83158af874d82314658e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b8f37dc8b3d7568a310b37c7cc6e0fd = $(`<div id="html_3b8f37dc8b3d7568a310b37c7cc6e0fd" style="width: 100.0%; height: 100.0%;">Mount Rainier - 4392m</div>`)[0];
+                popup_fc11de1a947f83158af874d82314658e.setContent(html_3b8f37dc8b3d7568a310b37c7cc6e0fd);
+            
+        
+
+        marker_3f68aa1c97793d3b52f869ad374ec9f8.bindPopup(popup_fc11de1a947f83158af874d82314658e)
+        ;
+
+        
+    
+    
+            var marker_5f024ed90a7d631392b176ab70fa8a5a = L.marker(
+                [45.3735, -121.6959],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_0b7f5568bfefc6a57a148696bd0b6eb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f024ed90a7d631392b176ab70fa8a5a.setIcon(icon_0b7f5568bfefc6a57a148696bd0b6eb0);
+        
+    
+        var popup_202ef67f9637d3dc026071c6833e2e01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b248f75a096cf06fbf87995537b48c33 = $(`<div id="html_b248f75a096cf06fbf87995537b48c33" style="width: 100.0%; height: 100.0%;">Mount Hood - 3426m</div>`)[0];
+                popup_202ef67f9637d3dc026071c6833e2e01.setContent(html_b248f75a096cf06fbf87995537b48c33);
+            
+        
+
+        marker_5f024ed90a7d631392b176ab70fa8a5a.bindPopup(popup_202ef67f9637d3dc026071c6833e2e01)
+        ;
+
+        
+    
+    
+            var marker_429ef709dceff457ab3f832aa5ad1a13 = L.marker(
+                [19.4756, -155.6081],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_36e078eadd2352ec3ed4a43c7d49966d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_429ef709dceff457ab3f832aa5ad1a13.setIcon(icon_36e078eadd2352ec3ed4a43c7d49966d);
+        
+    
+        var popup_9d1320691104240977eb344525e20fc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f681b36fdc1134a9350a31465e6fa77 = $(`<div id="html_2f681b36fdc1134a9350a31465e6fa77" style="width: 100.0%; height: 100.0%;">Mauna Loa - 4169m</div>`)[0];
+                popup_9d1320691104240977eb344525e20fc7.setContent(html_2f681b36fdc1134a9350a31465e6fa77);
+            
+        
+
+        marker_429ef709dceff457ab3f832aa5ad1a13.bindPopup(popup_9d1320691104240977eb344525e20fc7)
+        ;
+
+        
+    
+    
+            var marker_accdcd8c53ce4a3cd34fb72f35958827 = L.marker(
+                [41.4092, -122.1945],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_556032f61f7776e911266fae818c6367 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_accdcd8c53ce4a3cd34fb72f35958827.setIcon(icon_556032f61f7776e911266fae818c6367);
+        
+    
+        var popup_9bbe86a4d2db4f58e42c6e986d852b4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_167844ef0fd5b164c0cc7c08deac5ce0 = $(`<div id="html_167844ef0fd5b164c0cc7c08deac5ce0" style="width: 100.0%; height: 100.0%;">Mount Shasta - 4317m</div>`)[0];
+                popup_9bbe86a4d2db4f58e42c6e986d852b4c.setContent(html_167844ef0fd5b164c0cc7c08deac5ce0);
+            
+        
+
+        marker_accdcd8c53ce4a3cd34fb72f35958827.bindPopup(popup_9bbe86a4d2db4f58e42c6e986d852b4c)
+        ;
+
+        
+    
+    
+            var marker_6143ea7ae47fab9c8022bc6c3ea2de28 = L.marker(
+                [40.4871, -121.5044],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_f79d6ceef926880db9b037387020018f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6143ea7ae47fab9c8022bc6c3ea2de28.setIcon(icon_f79d6ceef926880db9b037387020018f);
+        
+    
+        var popup_95bd0f83e66337a4bc98906b52c13b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9888e2dffe93362c6afbc96809cad17d = $(`<div id="html_9888e2dffe93362c6afbc96809cad17d" style="width: 100.0%; height: 100.0%;">Lassen Peak - 3187m</div>`)[0];
+                popup_95bd0f83e66337a4bc98906b52c13b6e.setContent(html_9888e2dffe93362c6afbc96809cad17d);
+            
+        
+
+        marker_6143ea7ae47fab9c8022bc6c3ea2de28.bindPopup(popup_95bd0f83e66337a4bc98906b52c13b6e)
+        ;
+
+        
+    
+    
+            var marker_9fec4f226d89bfcba2eae04a7e2d09bf = L.marker(
+                [42.9446, -122.109],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_d02499ef7be11f7a33249dd8af2ee42f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9fec4f226d89bfcba2eae04a7e2d09bf.setIcon(icon_d02499ef7be11f7a33249dd8af2ee42f);
+        
+    
+        var popup_8633bac027e10c84f31688651d5c59b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7450e4bec813ac17ff181973932a78ff = $(`<div id="html_7450e4bec813ac17ff181973932a78ff" style="width: 100.0%; height: 100.0%;">Crater Lake - 1883m</div>`)[0];
+                popup_8633bac027e10c84f31688651d5c59b6.setContent(html_7450e4bec813ac17ff181973932a78ff);
+            
+        
+
+        marker_9fec4f226d89bfcba2eae04a7e2d09bf.bindPopup(popup_8633bac027e10c84f31688651d5c59b6)
+        ;
+
+        
+    
+    
+            var marker_7764da20e41eeff9459cc182a12b0149 = L.marker(
+                [48.7768, -121.8144],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_3e712ebf20d412c19e390b069bc1bf82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7764da20e41eeff9459cc182a12b0149.setIcon(icon_3e712ebf20d412c19e390b069bc1bf82);
+        
+    
+        var popup_7cd74feacc9ef23f562840b665cea9c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f1e93db39827b9c6e2377d3d4b83021 = $(`<div id="html_7f1e93db39827b9c6e2377d3d4b83021" style="width: 100.0%; height: 100.0%;">Mount Baker - 3285m</div>`)[0];
+                popup_7cd74feacc9ef23f562840b665cea9c2.setContent(html_7f1e93db39827b9c6e2377d3d4b83021);
+            
+        
+
+        marker_7764da20e41eeff9459cc182a12b0149.bindPopup(popup_7cd74feacc9ef23f562840b665cea9c2)
+        ;
+
+        
+    
+    
+            var marker_41a34694f8772be5f737f158fed93f98 = L.marker(
+                [46.2028, -121.4905],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_c3a0a9a7ddc53ee10d886d942e52eb69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41a34694f8772be5f737f158fed93f98.setIcon(icon_c3a0a9a7ddc53ee10d886d942e52eb69);
+        
+    
+        var popup_4db1fe53f1c0bbd9aa6647d6cf51fde1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3180ab12942c4f27f5678e97c1e1c619 = $(`<div id="html_3180ab12942c4f27f5678e97c1e1c619" style="width: 100.0%; height: 100.0%;">Mount Adams - 3742m</div>`)[0];
+                popup_4db1fe53f1c0bbd9aa6647d6cf51fde1.setContent(html_3180ab12942c4f27f5678e97c1e1c619);
+            
+        
+
+        marker_41a34694f8772be5f737f158fed93f98.bindPopup(popup_4db1fe53f1c0bbd9aa6647d6cf51fde1)
+        ;
+
+        
+    
+    
+            var marker_0847a47e6e1f891ad52e790c35378e82 = L.marker(
+                [48.1125, -121.1137],
+                {}
+            ).addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+    
+            var icon_4d18a3dc60e2ff8e9795c1c69c6cec35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0847a47e6e1f891ad52e790c35378e82.setIcon(icon_4d18a3dc60e2ff8e9795c1c69c6cec35);
+        
+    
+        var popup_a37ce78badfb8763966f594d9efc7d7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9f617a570dd75a491da70e818170b91 = $(`<div id="html_e9f617a570dd75a491da70e818170b91" style="width: 100.0%; height: 100.0%;">Glacier Peak - 3213m</div>`)[0];
+                popup_a37ce78badfb8763966f594d9efc7d7c.setContent(html_e9f617a570dd75a491da70e818170b91);
+            
+        
+
+        marker_0847a47e6e1f891ad52e790c35378e82.bindPopup(popup_a37ce78badfb8763966f594d9efc7d7c)
+        ;
+
+        
+    
+    
+        function geo_json_ec730d1a1f0ca97b96be017a742e98ff_styler(feature) {
+            switch(feature.properties.name) {
+                default:
+                    return {"color": "black", "fillColor": "red", "fillOpacity": 0.6};
+            }
+        }
+
+        function geo_json_ec730d1a1f0ca97b96be017a742e98ff_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ec730d1a1f0ca97b96be017a742e98ff = L.geoJson(null, {
+                onEachFeature: geo_json_ec730d1a1f0ca97b96be017a742e98ff_onEachFeature,
+            
+                style: geo_json_ec730d1a1f0ca97b96be017a742e98ff_styler,
+        });
+
+        function geo_json_ec730d1a1f0ca97b96be017a742e98ff_add (data) {
+            geo_json_ec730d1a1f0ca97b96be017a742e98ff
+                .addData(data);
+        }
+            geo_json_ec730d1a1f0ca97b96be017a742e98ff_add({"features": [{"geometry": {"coordinates": [[[-101.6015625, 39.368279], [-100.1953125, 38.68551], [-99.140625, 38.548165], [-98.173828125, 37.853169]]], "type": "Polygon"}, "properties": {"POP2005": 295734134, "name": "United States"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-141.0, 60.0], [-140.0, 59.0], [-139.0, 58.0]]], "type": "Polygon"}, "properties": {"POP2005": 32805000, "name": "Canada"}, "type": "Feature"}, {"geometry": {"coordinates": [[[123.0, 53.0], [124.0, 52.0], [125.0, 51.0]]], "type": "Polygon"}, "properties": {"POP2005": 1306313812, "name": "China"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_ec730d1a1f0ca97b96be017a742e98ff.addTo(map_87770fe6596f28416eee3365b2d375c9);
+        
+</script>
+</html>
